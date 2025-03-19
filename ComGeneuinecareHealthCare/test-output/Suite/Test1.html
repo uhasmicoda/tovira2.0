@@ -1,0 +1,227 @@
+<html>
+<head>
+<title>TestNG:  Test1</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test1</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>4/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Mar 19 10:10:40 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>133 seconds (133965 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.geneuineCare.healthCare.adminTest.CreateSpecializationTest.createSpecializationTest()'><b>createSpecializationTest</b><br>Test class: com.geneuineCare.healthCare.adminTest.CreateSpecializationTest</td>
+<td><div><pre>java.lang.AssertionError: Speacialization could not get successfully Deleted expected [false] but found [true]
+	at com.geneuineCare.healthCare.adminTest.CreateSpecializationTest.createSpecializationTest(CreateSpecializationTest.java:63)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace823060956", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace823060956'><pre>java.lang.AssertionError: Speacialization could not get successfully Deleted expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertFalse(Assert.java:78)
+	at com.geneuineCare.healthCare.adminTest.CreateSpecializationTest.createSpecializationTest(CreateSpecializationTest.java:63)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+</pre></div></td>
+<td>11</td>
+<td>com.geneuineCare.healthCare.adminTest.CreateSpecializationTest@327514f</td></tr>
+<tr>
+<td title='com.geneuineCare.healthCare.doctorTest.AddMedicalHistoryByDoctorTest.addMedicalHistoryByDoctorTest()'><b>addMedicalHistoryByDoctorTest</b><br>Test class: com.geneuineCare.healthCare.doctorTest.AddMedicalHistoryByDoctorTest</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;submit&quot; name=&quot;submit&quot; id=&quot;submit&quot; class=&quot;btn btn-o btn-primary&quot; disabled=&quot;&quot;&gt;...&lt;/button&gt; is not clickable at point (330, 393). Other element would receive the click: &lt;form role=&quot;form&quot; name=&quot;&quot; method=&quot;post&quot;&gt;...&lt;/form&gt;
+  (Session info: chrome=134.0.6998.89)
+Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [545e842ff388770043e9f0512430da16, clickElement {id=f.46E0CB3551F4DD3EF2A224A3A45A0947.d.D83357776F3C0C9113632CE2A5F50C3A.e.134}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\mdsad\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51217}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51217/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (545e842ff388770043e9f0512430da16)] -&gt; name: submit]
+Session ID: 545e842ff388770043e9f0512430da16
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
+	at com.geneuineCare.healthCare.objectRepository.AddPatientPage.createPatients(AddPatientPage.java:106)
+	at com.geneuineCare.healthCare.doctorTest.AddMedicalHistoryByDoctorTest.addMedicalHistoryByDoctorTest(AddMedicalHistoryByDoctorTest.java:74)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace356107316", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace356107316'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;submit&quot; name=&quot;submit&quot; id=&quot;submit&quot; class=&quot;btn btn-o btn-primary&quot; disabled=&quot;&quot;&gt;...&lt;/button&gt; is not clickable at point (330, 393). Other element would receive the click: &lt;form role=&quot;form&quot; name=&quot;&quot; method=&quot;post&quot;&gt;...&lt;/form&gt;
+  (Session info: chrome=134.0.6998.89)
+Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [545e842ff388770043e9f0512430da16, clickElement {id=f.46E0CB3551F4DD3EF2A224A3A45A0947.d.D83357776F3C0C9113632CE2A5F50C3A.e.134}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\mdsad\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51217}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51217/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (545e842ff388770043e9f0512430da16)] -&gt; name: submit]
+Session ID: 545e842ff388770043e9f0512430da16
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
+	at com.geneuineCare.healthCare.objectRepository.AddPatientPage.createPatients(AddPatientPage.java:106)
+	at com.geneuineCare.healthCare.doctorTest.AddMedicalHistoryByDoctorTest.addMedicalHistoryByDoctorTest(AddMedicalHistoryByDoctorTest.java:74)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+</pre></div></td>
+<td>12</td>
+<td>com.geneuineCare.healthCare.doctorTest.AddMedicalHistoryByDoctorTest@54d9d12d</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.geneuineCare.healthCare.adminTest.CreateAndDeleteDoctorbyAdminTest.createAndDeleteDoctorbyAdminTest()'><b>createAndDeleteDoctorbyAdminTest</b><br>Test class: com.geneuineCare.healthCare.adminTest.CreateAndDeleteDoctorbyAdminTest</td>
+<td></td>
+<td>13</td>
+<td>com.geneuineCare.healthCare.adminTest.CreateAndDeleteDoctorbyAdminTest@1165b38</td></tr>
+<tr>
+<td title='com.geneuineCare.healthCare.adminTest.CreateDoctorTest.createDoctorTest()'><b>createDoctorTest</b><br>Test class: com.geneuineCare.healthCare.adminTest.CreateDoctorTest</td>
+<td></td>
+<td>9</td>
+<td>com.geneuineCare.healthCare.adminTest.CreateDoctorTest@4c402120</td></tr>
+<tr>
+<td title='com.geneuineCare.healthCare.doctorTest.CreatePatientByDoctorTest.createPatientByDoctorTest()'><b>createPatientByDoctorTest</b><br>Test class: com.geneuineCare.healthCare.doctorTest.CreatePatientByDoctorTest</td>
+<td></td>
+<td>15</td>
+<td>com.geneuineCare.healthCare.doctorTest.CreatePatientByDoctorTest@5b12b668</td></tr>
+<tr>
+<td title='com.geneuineCare.healthCare.doctorTest.CreatePatientAndSearchbyNameTest.createPatientAndSearchbyNameTest()'><b>createPatientAndSearchbyNameTest</b><br>Test class: com.geneuineCare.healthCare.doctorTest.CreatePatientAndSearchbyNameTest</td>
+<td></td>
+<td>8</td>
+<td>com.geneuineCare.healthCare.doctorTest.CreatePatientAndSearchbyNameTest@4c12331b</td></tr>
+</table><p>
+</body>
+</html>
