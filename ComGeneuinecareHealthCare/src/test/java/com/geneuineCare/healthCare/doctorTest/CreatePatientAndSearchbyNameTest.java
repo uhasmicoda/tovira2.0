@@ -23,7 +23,7 @@ public class CreatePatientAndSearchbyNameTest extends BaseClass {
 	public void createPatientAndSearchbyNameTest()
 			throws InterruptedException, EncryptedDocumentException, IOException {
 
-		// Object creation of different classes
+		// Object creation of different classes saddam 
 
 		HomePage hp = new HomePage(driver);
 		WebDriverUtility wd = new WebDriverUtility();
