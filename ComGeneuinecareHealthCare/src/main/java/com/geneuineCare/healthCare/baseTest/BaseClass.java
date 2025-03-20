@@ -21,12 +21,12 @@ public class BaseClass {
 	WebDriverUtility wd = new WebDriverUtility();
 	public WebDriver driver = null;
 	public static WebDriver sdriver = null;
-	
 	public PropertyFile pf = new PropertyFile();
 	
 
 	@BeforeSuite(alwaysRun = true)
 	public void configBS() {
+		System.out.println("Before Starts from here");
       
 	}
 
