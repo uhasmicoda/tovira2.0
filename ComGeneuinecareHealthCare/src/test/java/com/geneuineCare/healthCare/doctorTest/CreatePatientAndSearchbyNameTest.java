@@ -70,7 +70,7 @@ public class CreatePatientAndSearchbyNameTest extends BaseClass {
 		WebElement Patienverify = app.getPatientVerify();
 		String actualPname = Patienverify.getText();
 		Assert.assertEquals(actualPname, expectedPname, "Patient is not added successfully by doctor");
-		UtilityObjectClass.getExtentTest().log(Status.PASS,"Patient is not added successfully by docter");
+		UtilityObjectClass.getExtentTest().log(Status.PASS,"Patient is added successfully by docter");
 		
 //		if (actualPname.equals(expectedPname)) {
 //			System.out.println("Patient added successfully by doctor");
