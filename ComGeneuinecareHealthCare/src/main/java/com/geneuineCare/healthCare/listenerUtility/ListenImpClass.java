@@ -24,12 +24,12 @@ public class ListenImpClass implements ITestListener, ISuiteListener {
 
 	@Override
 	public void onStart(ISuite suite) {
-
+/// saddamS
 		String time = new Date().toString().replace(" ", "_").replace("-", "_").replace(":", "_");
 		spark = new ExtentSparkReporter("./AdvanceReporter/report_" + time + ".html");
 		spark.config().setDocumentTitle("GeneuineCare Management System Test Suite Result");
 		spark.config().setReportName("GeneuineCare Management System Report");
-		spark.config().setTheme(Theme.DARK);
+		spark.config().setTheme(Theme.STANDARD);
 
 		report = new ExtentReports();
 		report.attachReporter(spark);
