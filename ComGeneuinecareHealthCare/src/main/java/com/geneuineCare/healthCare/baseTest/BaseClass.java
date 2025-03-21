@@ -26,7 +26,7 @@ public class BaseClass {
 
 	@BeforeSuite(alwaysRun = true)
 	public void configBS() {
-		System.out.println("Before Starts got executed successfully");
+		System.out.println("Before Starts got executed ");
       
 	}
 
